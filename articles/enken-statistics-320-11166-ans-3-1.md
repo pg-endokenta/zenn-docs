@@ -6,8 +6,16 @@ topics: []
 published: false
 ---
 
-確率母関数の定義より，
 
+## はじめに
+
+この記事は，[現代数理統計学の基礎](https://www.kyoritsu-pub.co.jp/book/b10003681.html)の第3章演習問題の問1について自作の解答を記したものです．
+
+問題文，解答が掲載されている公式のサイトは[こちら](https://sites.google.com/site/ktatsuya77/xian-dai)です．
+
+## 解答
+
+確率母関数の定義より，
 $$
 \begin{aligned}
 G_X(t) &= E[t^X] \\
@@ -55,7 +63,7 @@ $$
 
 $$
 \begin{aligned}
-G_X'(1) 
+G_X'(1)
 &= \frac{1}{N} \sum_{x=1}^{N} x \\
 &= \frac{1}{N} \frac{N(N+1)}{2} \\
 &= \frac{N+1}{2}
@@ -64,7 +72,7 @@ $$
 
 $$
 \begin{aligned}
-G_X''(1) 
+G_X''(1)
 &= \frac{1}{N} \sum_{x=1}^{N} x(x-1) \\
 &= \frac{1}{N} \left( \sum_{x=1}^{N} x^2 -\sum_{x=1}^{N} x \right) \\
 &= \frac{1}{N} \left( \frac{N(N+1)(2N+1)}{6} - \frac{N(N+1)}{2} \right) \\
@@ -95,3 +103,7 @@ V[X] &= \frac{(N+1)(N-1)}{3} + \frac{N+1}{2} - \left( \frac{N+1}{2} \right)^2 \\
 $$
 
 となる．
+
+## 参考文献
+
+- [現代数理統計学の基礎 共立出版](https://www.kyoritsu-pub.co.jp/book/b10003681.html)
