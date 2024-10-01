@@ -3,17 +3,16 @@ title: "現代数理統計学 第1章 演習問題 問1 自作解答"
 emoji: "👏"
 type: "tech"
 topics:
-  - "数理統計学"
-published: false
+  - "統計学"
+published: true
 ---
 
-<!-- ![解答の画像](https://storage.googleapis.com/zenn-user-upload/b3f7baf83eff-20240926.jpeg) -->
 
 ## はじめに
 
 この記事は，[現代数理統計学の基礎](https://www.kyoritsu-pub.co.jp/book/b10003681.html)の第1章演習問題の問1について自作の解答を記したものです．
 
-問題文，解答が掲載されている公式のサイトは[こちら](https://sites.google.com/site/ktatsuya77/xian-dai)です．
+問題文，解答が掲載されている公式のサイトは[こちら](https://sites.google.com/site/ktatsuya77/)です．
 
 ## 解答
 
@@ -54,6 +53,17 @@ $$
 よって，$A \varDelta B = (A \cup B) \backslash (A \cap B)$が成り立つ．
 
 以上より
+
+$$
+A \varDelta B
+= A^c \varDelta B^c
+= (A \cup B) \backslash (A \cap B)
+$$
+
+が成り立つ．
+
+確率については，
+
 $$
 \begin{aligned}
 P(A \varDelta B)

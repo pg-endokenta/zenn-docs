@@ -9,7 +9,7 @@ npx zenn new:article --slug 記事のスラッグ --title タイトル --type id
 ```
 
 ## プレビュー
-    
-```bash 
+
+```bash
 npx zenn preview
 ```

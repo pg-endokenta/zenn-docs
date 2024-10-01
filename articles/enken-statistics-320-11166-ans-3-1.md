@@ -2,8 +2,8 @@
 title: "現代数理統計学の基礎 第3章 演習問題 問1 自作解答"
 emoji: "⛳"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
-published: false
+topics: ["統計学"]
+published: true
 ---
 
 
@@ -11,11 +11,12 @@ published: false
 
 この記事は，[現代数理統計学の基礎](https://www.kyoritsu-pub.co.jp/book/b10003681.html)の第3章演習問題の問1について自作の解答を記したものです．
 
-問題文，解答が掲載されている公式のサイトは[こちら](https://sites.google.com/site/ktatsuya77/xian-dai)です．
+問題文，解答が掲載されている公式のサイトは[こちら](https://sites.google.com/site/ktatsuya77/)です．
 
 ## 解答
 
 確率母関数の定義より，
+
 $$
 \begin{aligned}
 G_X(t) &= E[t^X] \\
@@ -60,6 +61,8 @@ $$
 G_X'(t) = \frac{1}{N} \sum_{x=1}^{N} x t^{x-1} \\
 G_X''(t) = \frac{1}{N} \sum_{x=1}^{N} x(x-1) t^{x-2}
 $$
+
+より，
 
 $$
 \begin{aligned}

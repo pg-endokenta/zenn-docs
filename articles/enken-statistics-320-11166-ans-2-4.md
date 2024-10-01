@@ -10,7 +10,7 @@ published: false
 
 この記事は，[現代数理統計学の基礎](https://www.kyoritsu-pub.co.jp/book/b10003681.html)の第2章演習問題の問4について自作の解答を記したものです．
 
-問題文，解答が掲載されている公式のサイトは[こちら](https://sites.google.com/site/ktatsuya77/xian-dai)です．
+問題文，解答が掲載されている公式のサイトは[こちら](https://sites.google.com/site/ktatsuya77/)です．
 
 ## 解答
 
