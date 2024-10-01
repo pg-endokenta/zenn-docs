@@ -24,5 +24,4 @@ eigen_A$vectors
 
 ```
 
-
 関数eigen()の情報：[公式ドキュメント](https://cran.r-project.org/doc/manuals/r-release/fullrefman.pdf)のp.176

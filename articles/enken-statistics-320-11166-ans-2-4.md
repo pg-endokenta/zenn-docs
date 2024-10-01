@@ -2,7 +2,7 @@
 title: "現代数理統計学 第2章 演習問題 問4 自作解答"
 emoji: "👋"
 type: "tech"
-topics: []
+topics: ["統計学"]
 published: false
 ---
 
@@ -17,26 +17,123 @@ published: false
 ### $E[(X-t)^2]$の最小値
 
 $$
-\begin{align*}
+\begin{aligned}
 E[(X-t)^2] &= E[X^2 -2tX + t^2] \\
 &= E[X^2] - E[2tX] + E[t^2] \\
 &= E[X^2] - 2tE[X] + t^2
-\end{align*}
+\end{aligned}
 $$
 
 これを$t$の式と見ると，$t$に関する2次関数であり
 
 $$
-\begin{align*}
+\begin{aligned}
 E[X^2] - 2tE[X] + t^2
 &= t^2  - 2E[X] t + E[X^2] \\
 &= t^2  - 2E[X] t + E[X]^2 - E[X]^2 + E[X^2] \\
 &= (t - E[X])^2 - E[X]^2 + E[X^2]  \\
 &= (t - E[X])^2 + E[X^2] - E[X]^2 \\
 &= (t - E[X])^2 + V[X]
-\end{align*}
+\end{aligned}
 $$
 
 よって，$t=E[X]$のとき最小値を取ることがわかる．
 
 ### $E[|X-t|]$の最小値
+
+$$
+\begin{aligned}
+E[|X-t|]
+&= \int_{-\infty}^{\infty} |x-t| f_X(x) dx \\
+&= \int_{-\infty}^{t} -(x-t) f_X(x) dx + \int_{t}^{\infty} (x-t) f_X(x) dx \\
+&= \int_{-\infty}^{t} -x f_X(x) dx + \int_{-\infty}^{t} t f_X(x) dx + \int_{t}^{\infty} x f_X(x) dx + \int_{t}^{\infty} -t f_X(x) dx\\
+&= -\int_{-\infty}^{t} x f_X(x) dx + t\int_{-\infty}^{t} f_X(x) dx + \int_{t}^{\infty} x f_X(x) dx -t\int_{t}^{\infty} f_X(x) dx\\
+&= -\int_{-\infty}^{t} x f_X(x) dx + \int_{t}^{\infty} x f_X(x) dx +
+t\left(
+    \int_{-\infty}^{t} f_X(x) dx -\int_{t}^{\infty} f_X(x) dx
+\right) \\
+&= - \int_{-\infty}^{t} x f_X(x) dx +
+\left(
+    \int_{-\infty}^{t} x f_X(x) dx
+    - \int_{-\infty}^{t} x f_X(x) dx
+\right) +
+\int_{t}^{\infty} x f_X(x) dx +
+t\left(
+    \int_{-\infty}^{t} f_X(x) dx -\int_{t}^{\infty} f_X(x) dx
+\right) \\
+&= -2\int_{-\infty}^{t} x f_X(x) dx +
+\int_{-\infty}^{t} x f_X(x) dx +
+\int_{t}^{\infty} x f_X(x) dx +
+t\left(
+    \int_{-\infty}^{t} f_X(x) dx -\int_{t}^{\infty} f_X(x) dx
+\right) \\
+&= -2\int_{-\infty}^{t} x f_X(x) dx +
+E[X] +
+t\left(
+    \int_{-\infty}^{t} f_X(x) dx -\int_{t}^{\infty} f_X(x) dx
+\right) \\
+&= -2\int_{-\infty}^{t} x f_X(x) dx +
+E[X] +
+t\left(
+    \int_{-\infty}^{t} f_X(x) dx -\int_{t}^{\infty} f_X(x) dx +
+    \left(
+        \int_{-\infty}^{t} f_X(x) dx -\int_{-\infty}^{t} f_X(x) dx
+    \right)
+\right) \\
+&= -2\int_{-\infty}^{t} x f_X(x) dx +
+E[X] +
+t\left(
+    2\int_{-\infty}^{t} f_X(x) dx -
+    \left(
+        \int_{-\infty}^{t} f_X(x) dx + \int_{t}^{\infty} f_X(x) dx
+    \right)
+\right) \\
+&= -2\int_{-\infty}^{t} x f_X(x) dx +
+E[X] +
+t\left(
+    2\int_{-\infty}^{t} f_X(x) dx - 1
+\right) \\
+\end{aligned}
+$$
+
+これの最小値を求めるために，$t$で微分する．
+
+$$
+\begin{aligned}
+\frac{d}{dt} E[|X-t|]
+&= \frac{d}{dt}
+\left(
+    -2\int_{-\infty}^{t} x f_X(x) dx +
+    E[X] +
+    t\left(
+        2\int_{-\infty}^{t} f_X(x) dx - 1
+    \right)
+\right) \\
+&= -2 t f_X(t) +
+\left(
+        2\int_{-\infty}^{t} f_X(x) dx - 1
+\right) +
+t \left(
+    2 f_X(t)
+\right) \\
+&= 2\int_{-\infty}^{t} f_X(x) dx - 1
+\end{aligned}
+$$
+
+この値が0になるのは
+
+$$
+\begin{aligned}
+2\int_{-\infty}^{t} f_X(x) dx - 1 &= 0 \\
+\int_{-\infty}^{t} f_X(x) dx &= \frac{1}{2} \\
+F_X(t) &= \frac{1}{2}
+\end{aligned}
+$$
+
+のときである．
+
+よって，$t$が
+
+## 参考文献
+
+- [現代数理統計学の基礎 共立出版](https://www.kyoritsu-pub.co.jp/book/b10003681.html)
