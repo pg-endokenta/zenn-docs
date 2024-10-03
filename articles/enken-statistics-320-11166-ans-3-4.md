@@ -16,7 +16,7 @@ published: true
 ## 解答
 
 $$
-\begin{align}
+\begin{aligned}
 \lim_{n\to \infty} P(X=x|N,M,K)
 &= \lim_{n\to \infty} \frac{\binom{M}{x} \binom{N-M}{K-x}}{\binom{N}{K}} \\
 &= \lim_{n\to \infty} \frac{M!}{x! (M-x)!}\frac{(N-M)!}{(K-x)!(N-M-K+x)!} \frac{K!(N-K)!}{N!} \\
@@ -32,7 +32,7 @@ $$
     1(1-\frac{1}{N})\cdots(1-(\frac{K-1}{N}))
 }\\
 &= \binom{K}{x}p^x(1-p)^{K-x}
-\end{align}
+\end{aligned}
 $$
 
 よって二項分布に収束することが示された．
