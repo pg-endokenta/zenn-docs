@@ -1,5 +1,5 @@
 ---
-title: "gitで使用するエディターを変更する方法
+title: "gitで使用するエディターを変更する方法"
 emoji: "🚗"
 type: "tech"
 topics:
