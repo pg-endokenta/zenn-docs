@@ -1,3 +1,11 @@
+---
+title: "Pro Git Bookを読んでみた"
+emoji: "📖"
+type: "tech" # tech: 技術記事 / idea: アイデア
+topics: ["git"]
+published: false
+---
+
 
 読み切った章
 1-8
