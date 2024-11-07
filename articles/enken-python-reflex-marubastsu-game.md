@@ -9,7 +9,9 @@ published: true
 ## はじめに
 
 `Reflex`という，Pythonでバックエンドとフロントエンドを開発できるライブラリが存在します．
-[Reflexのドキュメント](https://reflex.dev/)
+
+Reflexのドキュメントは以下
+@[card](https://reflex.dev/)
 
 今回はお試しとして`Reflex`を用いて「マルバツゲーム」を作成したので，その作り方を紹介します．
 
