@@ -4,6 +4,7 @@ emoji: "🦉"
 type: "idea"
 topics: [django, nextjs, gcp]
 published: true
+publication_name: "ka_projects"
 ---
 
 ## 📝 概要
