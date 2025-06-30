@@ -181,7 +181,7 @@ AIが「**学習している**」と判定した場合にのみ，**学習時間
 
 ## 🎥 デモ動画
 
-@[youtube](xnCF-2RgHBk)
+@[youtube](aJw6tpFdbEI)
 
 ## 🌱 今後の展望
 
