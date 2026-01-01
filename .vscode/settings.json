@@ -11,4 +11,8 @@
         "mathbb",
         "substack"
     ],
+    "markdownlint.config": {
+        "MD034": false
+    }
+
 }
